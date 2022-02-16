@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void main() {  
+    
+    int num,i,j,r,temp;
+
+    printf("Input the number : ");
+    scanf("%d",&num);
+    
+    for(i=0;i<=9;i++)
+    {
+        temp=0;
+        for(j=num;j>0;j=j/10)
+        {
+            r = j % 10;
+            if(r == i)
+            {
+                temp++;
+            }
+        }
+        printf("\nThe frequency of %d is : %d",i,temp);
+    }
+}  

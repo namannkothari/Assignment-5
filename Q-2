@@ -1,0 +1,18 @@
+#include<stdlib.h>
+#include <stdio.h>
+
+void main()
+{
+    int *a,range,sum=0,i;
+    printf("Enter the range of sum:");
+    scanf("%d",&range);
+    a = (int *)malloc(range * sizeof(int));
+    for(i=0;i<range;i++){
+        printf("Enter the values:");
+        scanf("%d",&a[i]);
+        sum=sum+a[i];
+    }
+    
+    printf("Sum of the list: %d",sum);
+}
+

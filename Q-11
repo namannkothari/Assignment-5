@@ -1,0 +1,20 @@
+void main(){
+    int sign,last,n,p,s=0;
+    
+    printf("Enter the number : ");
+    scanf("%d",&sign);
+    
+    last = sign % 10;
+    n = sign / 10;
+    
+    for(p=1;n>10;)
+    {
+        s = s + p * (n % 10);
+        n = n / 10;
+        last = last * 10;
+        p = p * 10;
+        
+    }
+    
+    printf("The number after swap is : %d",(10*(last+s)+n));
+}

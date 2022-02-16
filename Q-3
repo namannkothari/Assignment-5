@@ -1,0 +1,26 @@
+#include<stdlib.h>
+#include <stdio.h>
+
+void main()
+{
+    int *a,range,sum=0,i;
+    
+    printf("Enter the range of the list:");
+    scanf("%d",&range);
+    
+    a = (int *)malloc(range * sizeof(int));
+    
+    for(i=0;i<range;i++){
+        printf("Enter the values:");
+        scanf("%d",&a[i]);
+        sum=sum+a[i];
+    }
+    
+    printf("The odd numbers of the list are:");
+    
+    for(i=0;i<range;i++){
+        if(a[i]%2!=0)
+        printf(" %d",a[i]);
+    }
+
+}

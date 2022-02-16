@@ -1,0 +1,31 @@
+#include<conio.h>
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+    int num,choice=1;
+
+    do 
+    {
+        printf("Enter any number: ");
+        scanf("%d", &num);
+        
+        if(num > 0)
+        {
+           printf("Number is POSITIVE");
+        }
+        else if(num < 0)
+        {
+             printf("Number is NEGATIVE");
+        }
+        else 
+            printf("Number is ZERO");
+         
+        printf("\ndo you want to continue press 0: ");
+        scanf(" %d",&choice);
+        printf("\n ");
+    }
+        while (choice != 0);
+     
+}

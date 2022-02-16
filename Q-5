@@ -1,0 +1,16 @@
+#include<stdlib.h>
+#include <stdio.h>
+
+void main()
+{
+    int i,range;
+    
+    printf("Enter the range:");
+    scanf("%d",&range);
+     printf("\nThe odd number in range are:");
+    
+    for(i=1;i<=range;i=i+2){
+       printf(" %d",i);
+        
+    }   
+}

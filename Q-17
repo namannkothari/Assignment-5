@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void main() {  
+    char alpha;
+    
+    for(alpha=65;alpha<=90;alpha++)
+    {
+        printf("%c ",alpha);
+    }
+    printf("\n");
+    for(alpha=97;alpha<=122;alpha++)
+    {
+        printf("%c ",alpha);
+    }
+}  
+

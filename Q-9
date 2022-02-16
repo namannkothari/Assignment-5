@@ -1,0 +1,21 @@
+#include<stdlib.h>
+#include <stdio.h>
+
+void main()
+{
+    int i,num,j;
+    
+    printf("Enter number of lines you want to print: ");
+    scanf("%d",&num);
+    
+    for(i=1;i<=num;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+    
+}
+

@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<conio.h>
+
+void main()
+{
+    int i,no1,no2,ans;
+    
+    printf("Enter the First number : ");
+    scanf("%d",&no1);
+    
+    printf("Enter the Second number : ");
+    scanf("%d",&no2);
+    
+    for(i=1;i<=no1 && i<=no2;i++)
+    {
+        if (no1 % i == 0 && no2 % i == 0) 
+            ans=i;
+        
+    }
+    printf("%d",ans);
+}
+

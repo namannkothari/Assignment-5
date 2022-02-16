@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+void main() {  
+    char alpha;
+    
+    for(alpha=33;alpha<=126;alpha++)
+        printf("%c ",alpha);
+}  

@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+void main() {  
+    
+    int num,i,sum=0,j,k;
+    
+    printf("Input the first number of the G.P. series: ");
+    scanf("%d",&i);
+    
+    printf("Input the number or terms in the G.P. series: ");
+    scanf("%d",&num);
+    
+    printf("Input the common ratio of G.P. series: ");
+    scanf("%d",&j);
+    
+    printf("The numbers for the G.P. series:\n");
+    
+    for(k=0;k<num;k++)
+    {
+        printf("%d ",i);
+        sum=sum+i;
+        i=i*j;
+    }
+        printf("\nThe Sum of the G.P. series : %d",sum);
+}  
